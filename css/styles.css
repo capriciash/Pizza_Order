@@ -1,13 +1,13 @@
 .col-md-12 {
-  background-color: #990000;
+  background-color: #8de500;
   padding-top: 10px;
   padding-bottom: 10px;
   text-align: center;
-  color: white;
+  color: #101d2f;
 }
 
 .tagline {
-  color: #777777;
+  color: #222222;
 }
 
 button {
@@ -15,26 +15,36 @@ button {
   color: white;
 }
 
+h4 {
+  color: #8de500;
+}
+
 .sidebar {
-  float: left;
+  float: right;
   background-color: #222222;
   padding: 10px;
+  width: 200px;
   color: white;
   height: 700px;
 }
 
-.instructions {
-  padding: 10px;
+.instructions, .orderform {
   border-width: thick;
-  float: left;
-  margin: 20px;
-  color: black;
+  color: white;
+  align: left;
+  margin-top: 30px;
 }
 
 body {
-  background-color: #555555;
+  background-color: #101d2f;
 }
 
 .form-control {
   width: 70%;
+  color: #222222;
+}
+
+#order {
+  color: white;
+  margin-left: 20px;
 }

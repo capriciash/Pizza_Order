@@ -28,19 +28,12 @@
 
     <div class="container-fluid">
       <div class="instructions">
-        <h3>How to order the best pizza in Portland:</h3>
-        <ol>
-          <li>Select a size</li>
-          <li>Select the crust</li>
-          <li>Select the toppings</li>
-          <li>Click, "Add pizza!"</li>
-        </ol>
-        <br>
+        <h3>Order Form</h3>
       </div>
 
       <div class="orderForm">
         <form id="order">
-          <h4>Size:</h4>
+          <h4>Select the size:</h4>
           <select class="form-control" id="size">
             <option>Small</option>
             <option>Medium (Add 2 dollars)</option>
@@ -49,7 +42,7 @@
           </select>
           <!-- var size = $("#size").val(); -->
 
-          <h4>Crust Type:</h4>
+          <h4>Select the crust:</h4>
           <select class="form-control" id="crust">
             <option>Normal</option>
             <option>Garlic Butter (Add 1 dollar)</option>
@@ -58,9 +51,16 @@
           </select>
           <!-- var crust = $("#crust").val(); -->
 
-          <h4>Toppings:</h4>
-          <input type="checkbox" name="topping" value="pepperoni">Pepperoni</input><br>
-
+          <h4>Select the toppings:</h4>
+          <p><em>(Meats are an extra $2 and vegetables are an extra $1.)</em></p>
+          <input type="checkbox" name="topping" value="pepperoni"> Pepperoni</input>
+          <input type="checkbox" name="topping" value="pepperoni"> Sausage</input>
+          <input type="checkbox" name="topping" value="pepperoni"> Canadian Bacon</input>
+          <input type="checkbox" name="topping" value="pepperoni"> Olives</input>
+          <input type="checkbox" name="topping" value="pepperoni"> Peppers</input>
+          <input type="checkbox" name="topping" value="pepperoni"> Pineapple</input>
+          <input type="checkbox" name="topping" value="pepperoni"> Mushrooms</input>
+          <br></br>
           <button type="submit" class="btn">Add pizza!</button>
         </form>
       </div>
