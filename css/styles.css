@@ -1,0 +1,40 @@
+.col-md-12 {
+  background-color: #990000;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: white;
+}
+
+.tagline {
+  color: #777777;
+}
+
+button {
+  background-color: #990000;
+  color: white;
+}
+
+.sidebar {
+  float: left;
+  background-color: #222222;
+  padding: 10px;
+  color: white;
+  height: 700px;
+}
+
+.instructions {
+  padding: 10px;
+  border-width: thick;
+  float: left;
+  margin: 20px;
+  color: black;
+}
+
+body {
+  background-color: #555555;
+}
+
+.form-control {
+  width: 70%;
+}
