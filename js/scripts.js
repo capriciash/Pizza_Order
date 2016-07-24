@@ -1,5 +1,7 @@
 var toppings = [];
-var currentCost = 0;
+var currentCost = 10;
+var totalCost = 0;
+var numToppings = 0;
 
 function Pizza(size, crust, toppings) {
   this.size = size;
@@ -7,8 +9,18 @@ function Pizza(size, crust, toppings) {
   this.toppings = toppings;
 }
 
-Pizza.prototype.cost = function() {
-  currentCost = 10
+function resetValues() {
+  toppings = [];
+  currentCost = 10;
+  totalCost = 0;
+  numToppings = 0;
+}
+
+Pizza.prototype.numToppings = function () {
+  numToppings = this.toppings.length;
+}
+
+Pizza.prototype.costCalculator = function() {
   if (this.size === "Medium") {
     currentCost += 2;
   } else if (this.size === "Large"){
@@ -23,7 +35,8 @@ Pizza.prototype.cost = function() {
   } else if (this.crust === "Gluten Free") {
     currentCost +=4;
   }
-  //Add foreach loop to deal with toppings
+  numToppings *= 2;
+  currentCost += numToppings;
   return currentCost;
 }
 
@@ -31,20 +44,28 @@ Pizza.prototype.cost = function() {
 $(document).ready(function() {
   $("form#order").submit(function(event) {
   event.preventDefault();
-//reset order on page  $("#idfordisplayonpage").text("");
+  $("#insertOrder").text("");
+  resetValues();
+
   var size = $("#size").val();
   var crust = $("#crust").val();
   var toppings = $('input:checkbox:checked').map(function(){
     return $(this).val();
   }).get();
-  console.log(size, crust, toppings);
 
   var newPizza = new Pizza(size, crust, toppings);
-  console.log(newPizza);
 
-  var cost = newPizza.cost();
-  console.log(cost);
+  newPizza.numToppings();
+
+  totalCost = newPizza.costCalculator();
+
+  $("ul#insertOrder").append("<li>Size: " + newPizza.size + "</li>" +
+  "<li>Crust: " + newPizza.crust + "</li>" +
+  "<li>Toppings: " + newPizza.toppings + "</li>" +
+  "<li>Cost: $" + totalCost + "</li>"
+  );
 
   $("#insertOrder").show();
+
   });
 });
