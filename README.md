@@ -27,7 +27,7 @@ _Check it out on Github:_ https://capriciash.github.io/Pizza_Order/
 
 ## Known Bugs
 
-_There are no known bugs.  At some point, I would like to add the ability for the user to delete, add, or modify the pizzas they submitted._
+_Instead of adding $1 for each vegetable topping and $2 for each meat topping, the program adds $2 for each topping, regardless of type.  At some point, I would also like to add the ability for the user to delete, add, or modify the pizzas they submitted._
 
 ## Support and contact details
 
