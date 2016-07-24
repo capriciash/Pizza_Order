@@ -59,10 +59,10 @@ $(document).ready(function() {
 
   totalCost = newPizza.costCalculator();
 
-  $("ul#insertOrder").append("<li>Size: " + newPizza.size + "</li>" +
-  "<li>Crust: " + newPizza.crust + "</li>" +
-  "<li>Toppings: " + newPizza.toppings + "</li>" +
-  "<li>Cost: $" + totalCost + "</li>"
+  $("ul#insertOrder").append("<li>Size: <em>" + newPizza.size + "</em></li>" +
+  "<li>Crust: <em>" + newPizza.crust + "</em></li>" +
+  "<li>Toppings: <em>" + newPizza.toppings + "</em></li>" +
+  "<li>Cost: <em>$" + totalCost + "</em></li>"
   );
 
   $("#insertOrder").show();

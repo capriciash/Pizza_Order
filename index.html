@@ -21,7 +21,7 @@
 
     <div class="sidebar">
       <div id="cartDisplay">
-        <h3>Your Cart</h3>
+        <h3>Your Pizza</h3>
         <ul id="insertOrder"></ul>
 
       </div>
@@ -35,6 +35,7 @@
       <div class="orderForm">
         <form id="order">
           <h4>Select the size:</h4>
+          <p><em>(A small pizza costs $10, a medium is $12, a large is $14, and an extra large is $16.)</em></p>
           <select class="form-control" id="size">
             <option>Small</option>
             <option>Medium</option>
@@ -43,6 +44,7 @@
           </select>
 
           <h4>Select the crust:</h4>
+          <p><em>(Garlic Butter is an extra $1, Stuffed with Cheese is an extra $3, and Gluten Free is an extra $4.)</em></p>
           <select class="form-control" id="crust">
             <option>Normal</option>
             <option>Garlic Butter</option>
@@ -51,7 +53,7 @@
           </select>
 
           <h4>Select the toppings:</h4>
-          <p><em>(Meats are an extra $2 and vegetables are an extra $1.)</em></p>
+          <p><em>(Each topping is an extra $2.)</em></p>
           <input type="checkbox" name="topping" value="Pepperoni"> Pepperoni</input>
           <input type="checkbox" name="topping" value="Sausage"> Sausage</input>
           <input type="checkbox" name="topping" value="Canadian Bacon"> Canadian Bacon</input>
